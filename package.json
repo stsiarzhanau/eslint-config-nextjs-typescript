@@ -1,0 +1,67 @@
+{
+  "name": "@stsiarzhanau/eslint-config-nextjs-typescript",
+  "version": "1.0.0",
+  "description": "ESLint config for Next.js apps with additional rules for TypeScript, TailwindCSS, Vitest, React Testing Library and more",
+  "author": "Aliaksandr Stsiarzhanau <sterzhanoff@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@next/eslint-plugin-next": "^14.0.4",
+    "@rushstack/eslint-patch": "^1.6.1",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest-dom": "^5.1.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-tailwindcss": "^3.13.1",
+    "eslint-plugin-testing-library": "^6.2.0",
+    "eslint-plugin-vitest": "^0.3.20"
+  },
+  "peerDependencies": {
+    "eslint": ">=8"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stsiarzhanau/eslint-config-nextjs-typescript.git"
+  },
+  "homepage": "https://github.com/stsiarzhanau/eslint-config-nextjs-typescriptjs#readme",
+  "bugs": {
+    "url": "https://github.com/stsiarzhanau/eslint-config-nextjs-typescript/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslint config",
+    "eslintconfig",
+    "next",
+    "nextjs",
+    "next eslint config",
+    "nextjs eslint config",
+    "eslint-config-next",
+    "eslint config next",
+    "eslint-config-nextjs",
+    "eslint config nextjs",
+    "typescript",
+    "import",
+    "import sort",
+    "simple-import-sort",
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "tailwindcss",
+    "vitest",
+    "testing-library",
+    "react testing library",
+    "jest-dom",
+    "prettier",
+    "recommended"
+  ]
+}

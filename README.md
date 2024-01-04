@@ -1,6 +1,11 @@
 # eslint-config-nextjs-typescript
 
-Custom ESLint configuration for Next.js apps.
+Custom ESLint configuration for Next.js (and not only) apps.
+
+## Examples of usage
+
+- [Next.js starter](https://github.com/stsiarzhanau/next-app-starter)
+- Vite starter
 
 ## Do I need this?
 
@@ -10,7 +15,7 @@ If you don't use **Prettier**, **TailwindCSS**, **Vitest** and **React Testing L
 
 Otherwise, this config may be handy. As it allows not to bother with extending from `eslint-config-next` or `eslint-plugin-next`, dealing with potential conflicts / unintended overrides and installing additional dependencies.
 
-The best combo is to use this config alongside with Prettier and `prettier-plugin-tailwindcss`.
+The best combo is to use this config alongside with Prettier and `prettier-plugin-tailwindcss`. See examples above.
 
 ## What's included?
 
@@ -52,6 +57,7 @@ Then create a `.eslintrc.json` file with the following contents in the root fold
 
 Modify `scripts` entry of your `package.json`.
 
+
     "scripts": {
     	"dev": "next dev",
     	"build": "next build",
@@ -59,6 +65,7 @@ Modify `scripts` entry of your `package.json`.
       - "lint": "next lint"
       + "lint": "eslint [your options] [directories to lint]"
     },
+
 
 ## Replacing built-in ESLint configuration in an existing create-next-app project
 
@@ -90,7 +97,18 @@ Modify `scripts` entry of your `package.json`.
       + "lint": "eslint [your options] [directories to lint]"
     },
 
+## Usage with React projects not based on Next.js
+
+If you are using this config in a React project not based on Next.js, you can extend from `@stsiarzhanau/nextjs-typescript/core` instead of the default `@stsiarzhanau/nextjs-typescript` export. This will exclude Next.js specific rules:
+
+    {
+      "extends": "@stsiarzhanau/nextjs-typescript/core",
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      }
+    }
+
+
 ## Additional configuration
 
 This config uses type aware rules from `@typescript-eslint/eslint-plugin`. That means the plugin uses your `tsconfig.json` to understand project structure. If you have a single `tsconfig.json` in the root directory, you are good to go. If you have more complex custom project structure you'll need to override [`parserOptions.project`](https://typescript-eslint.io/packages/parser#project) and/or [`parserOptions.tsconfigRootDir`](https://typescript-eslint.io/packages/parser#tsconfigrootdir) config options. This may also require changing ESLint configuration file format to `.eslintrc.js`.
-

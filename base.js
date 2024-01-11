@@ -91,7 +91,9 @@ module.exports = {
       version: 'detect',
     },
     'import/resolver': {
-      typescript: true,
+      typescript: {
+        alwaysTryTypes: true,
+      },
     },
   },
 };

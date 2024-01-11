@@ -1,6 +1,6 @@
 {
   "name": "@stsiarzhanau/eslint-config-nextjs-typescript",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "ESLint config for Next.js apps with additional rules for TypeScript, TailwindCSS, Vitest, React Testing Library and more",
   "author": "Aliaksandr Stsiarzhanau <sterzhanoff@gmail.com>",
   "license": "MIT",
